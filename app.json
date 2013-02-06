@@ -1,0 +1,7 @@
+{
+    "name": "Open Access Journal's Licenses",
+    "short_name": "oajournals",
+    "thumbnail": "http://creativecommons.org/images/card-human.png",
+    "description": "License classification of Open Access Research Journals",
+    "question": "Which open license uses this journal?"
+}

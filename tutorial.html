@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="span12">
+        <div id="modal" class="modal hide fade">
+            <div class="modal-header">
+                <h3>Open Access Licenses Journal tutorial</h3>
+            </div>
+            <div id="0" class="modal-body" style="display:none">
+                <p><strong>Hi!</strong>  Welcome to the <strong>application tutorial</strong>. This tutorial will show you how can add which licenses each journal supports in this Crowdcrafting.org app.
+               </p> 
+            </div>
+            <div id="1" class="modal-body" style="display:none">
+                <p>The application is really simple. It loads the name and publisher of a Journal and asks you this question: which open license is using this Journal?</p>
+                <p>You will have several options, and all you have to do is to Google the journal and get this information.
+                </p>
+                <p>
+                You will have also to add, if possible, who owns the copyright of the paper.
+                </p>
+                <p>All you have to do is to select one of the possible answers and you will be done.</p>
+            </div>
+            <div class="modal-footer">
+                <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn">Previous</a>
+                <a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-success">Next</a>
+                <a id="startContrib" href="../oajournals/newtask" class="btn btn-primary" style="display:none"><i class="icon-thumbs-up"></i> Start Contributing!</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var step = -1;
+    function showStep(action) {
+        $("#" + step).hide();
+        if (action == 'next') {
+            step = step + 1;
+        }
+        if (action == 'prev') {
+            step = step - 1;
+        }
+        if (step == 0) {
+            $("#prevBtn").hide();
+        }
+        else {
+            $("#prevBtn").show();
+        }
+
+        if (step == 1 ) {
+            $("#nextBtn").hide();
+            $("#startContrib").show();
+        }
+        $("#" + step).show();
+    }
+
+    showStep('next');
+    $("#modal").modal('show');
+</script>
