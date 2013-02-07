@@ -1,7 +1,7 @@
 {
-    "name": "Open Access Journal's Licenses",
+    "name": "Open Access journal licenses & copyright",
     "short_name": "oajournals",
     "thumbnail": "http://creativecommons.org/images/card-human.png",
-    "description": "Re-use License & Copyright classification of Open Access Research Journals",
+    "description": "Re-use License & Copyright classification of Open Access research journals",
     "question": "What re-use license does this journal use and who owns the copyright?"
 }
