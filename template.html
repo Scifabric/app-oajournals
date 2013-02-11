@@ -129,7 +129,7 @@ pybossa.taskLoaded(function(task, deferred) {
         // load image from flickr
         var publisher = $('<span/>');
         var journal = $('<span/>');
-        var google = "https://www.google.com/search?q=journal+" + task.info.longname + "+" + task.info.publisher; 
+        var google = "https://www.google.com/search?q=journal+" + task.info.longname; 
         publisher.html('<strong><i class="icon-book"></i> Publisher:</strong> ' + task.info.publisher);
         journal.html('<strong><i class="icon-beaker"></i> Journal:</strong> ' + task.info.longname);
         
